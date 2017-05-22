@@ -1,0 +1,44 @@
+site_name: TupleInf Open IE Dataset
+theme: null
+theme_dir: './ai2_theme_prebuilt'
+repo_url: null
+repo_name: null
+download_url: 'http://ai2-website.s3.amazonaws.com/data/TupleInfKB.zip'
+extra:
+  font:
+    text: Oxygen
+    code: Oxygen
+
+pages:
+    - Home: index.md
+    # - dataset structure: structure.md
+    # - datapoint: datapoint.md
+    - 4th Grade Sentences:
+      - Pt. 1: 4thgr_pt1.md
+      - Pt. 2: 4thgr_pt2.md
+      - Pt. 3: 4thgr_pt3.md
+      - Pt. 4: 4thgr_pt4.md
+      - Pt. 5: 4thgr_pt5.md
+      - Pt. 6: 4thgr_pt6.md
+      - Pt. 7: 4thgr_pt7.md
+      - Pt. 8: 4thgr_pt8.md
+      - Pt. 9: 4thgr_pt9.md
+      - Pt. 10: 4thgr_pt10.md
+      - Pt. 11: 4thgr_pt11.md
+      - Pt. 12: 4thgr_pt12.md
+      - Pt. 13: 4thgr_pt13.md
+      - Pt. 14: 4thgr_pt14.md
+      - Pt. 15: 4thgr_pt15.md
+      - Pt. 16: 4thgr_pt16.md
+    - 8th Grade Sentences:
+      - Pt. 1: 8thgr_pt1.md
+      - Pt. 2: 8thgr_pt2.md
+      - Pt. 3: 8thgr_pt3.md
+      - Pt. 4: 8thgr_pt4.md
+      - Pt. 5: 8thgr_pt5.md
+      - Pt. 6: 8thgr_pt6.md
+      - Pt. 7: 8thgr_pt7.md
+      - Pt. 8: 8thgr_pt8.md
+      - Pt. 9: 8thgr_pt9.md
+      - Pt. 10: 8thgr_pt10.md
+      - Pt. 11: 8thgr_pt11.md

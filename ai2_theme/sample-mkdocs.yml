@@ -1,0 +1,10 @@
+site_name: '<Your Dataset Name>'
+theme: null
+theme_dir: 'ai2-theme'
+repo_url: 'https://github.com/allenai/<your repo>'
+repo_name: '<Your Repo Name>'
+download_url: '<Your Download URL>'
+extra:
+  font:
+      text: Oxygen
+      code: Oxygen

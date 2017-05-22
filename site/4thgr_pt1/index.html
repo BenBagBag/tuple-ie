@@ -1,0 +1,3266 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="./favicon.ico">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.5.4">
+    
+    
+      
+        <title>Pt. 1 - TupleInf Open IE Dataset</title>
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-56ade86843.js"></script>
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-b1a1975878.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxygen:300,400,400i,700|Oxygen">
+        <style>body,input{font-family:"Oxygen","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Oxygen","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+  
+  
+    <body>
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="TupleInf Open IE Dataset" class="md-logo">
+          <img src="../assets/images/ai2-logo.120x91.png" width="60" height="45.5">
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  4th Grade Sentences
+                </span>
+              
+            
+            Pt. 1
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <div class="md-search__overlay"></div>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink" style="vertical-align: middle;">
+        <div class="md-header-nav__source">
+          
+            <a href="http://ai2-website.s3.amazonaws.com/data/TupleInfKB.zip" download class="md-header-nav__download" onclick="ga('send','event','Downloads','tqa');">
+              DOWNLOAD
+            </a>
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <a href=".." title="TupleInf Open IE Dataset" class="side-nav-link">
+      <img src="../assets/images/ai2-logo.120x91.png" width="60" height="45.5">
+    </a>
+    TupleInf Open IE Dataset
+  </label>
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      4th Grade Sentences
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        4th Grade Sentences
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+    <a href="./" title="Pt. 1" class="md-nav__link md-nav__link--active">
+      Pt. 1
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../4thgr_pt2/" title="Pt. 2" class="md-nav__link">
+      Pt. 2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../4thgr_pt3/" title="Pt. 3" class="md-nav__link">
+      Pt. 3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../4thgr_pt4/" title="Pt. 4" class="md-nav__link">
+      Pt. 4
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../4thgr_pt5/" title="Pt. 5" class="md-nav__link">
+      Pt. 5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../4thgr_pt6/" title="Pt. 6" class="md-nav__link">
+      Pt. 6
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../4thgr_pt7/" title="Pt. 7" class="md-nav__link">
+      Pt. 7
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../4thgr_pt8/" title="Pt. 8" class="md-nav__link">
+      Pt. 8
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../4thgr_pt9/" title="Pt. 9" class="md-nav__link">
+      Pt. 9
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../4thgr_pt10/" title="Pt. 10" class="md-nav__link">
+      Pt. 10
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../4thgr_pt11/" title="Pt. 11" class="md-nav__link">
+      Pt. 11
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../4thgr_pt12/" title="Pt. 12" class="md-nav__link">
+      Pt. 12
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../4thgr_pt13/" title="Pt. 13" class="md-nav__link">
+      Pt. 13
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../4thgr_pt14/" title="Pt. 14" class="md-nav__link">
+      Pt. 14
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../4thgr_pt15/" title="Pt. 15" class="md-nav__link">
+      Pt. 15
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../4thgr_pt16/" title="Pt. 16" class="md-nav__link">
+      Pt. 16
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      8th Grade Sentences
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        8th Grade Sentences
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../8thgr_pt1/" title="Pt. 1" class="md-nav__link">
+      Pt. 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../8thgr_pt2/" title="Pt. 2" class="md-nav__link">
+      Pt. 2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../8thgr_pt3/" title="Pt. 3" class="md-nav__link">
+      Pt. 3
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../8thgr_pt4/" title="Pt. 4" class="md-nav__link">
+      Pt. 4
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../8thgr_pt5/" title="Pt. 5" class="md-nav__link">
+      Pt. 5
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../8thgr_pt6/" title="Pt. 6" class="md-nav__link">
+      Pt. 6
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../8thgr_pt7/" title="Pt. 7" class="md-nav__link">
+      Pt. 7
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../8thgr_pt8/" title="Pt. 8" class="md-nav__link">
+      Pt. 8
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../8thgr_pt9/" title="Pt. 9" class="md-nav__link">
+      Pt. 9
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../8thgr_pt10/" title="Pt. 10" class="md-nav__link">
+      Pt. 10
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../8thgr_pt11/" title="Pt. 11" class="md-nav__link">
+      Pt. 11
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                
+                <h1 id="4th-grade-sentences-pt-1">4th Grade Sentences Pt. 1</h1>
+<hr />
+<blockquote>
+<p>000 species) have: soft, fleshy bodies a tongue-like organ called a radula a hard, external shell--usually Photo &#169; The Marine Biological Laboratory Cephalopods (about 1,000 species) have: well developed brains a circulatory system with three hearts, veins, and arteries ink sacs--usually no external shell--in most cases Photo &#169; Kerry L. Werry 1995 They: live only in the sea use jet propulsion can rapidly change skin color and texture--in most cases Squids (about 500 species) have: long, cylindrical bodies 8 arms and 2 tentacles--usually an internal, blade-shaped gladius fins Photo &#169; The Marine Biological Laboratory Can you find the cephalopod?</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.71</td>
+<td>(They; live; L:only in the sea use jet propulsion; L:in most cases)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>002.27 Erosion is the wearing away of the land surface by water, wind, ice, or other geologic agents and by such processes as gravitational creep.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.96</td>
+<td>(002.27 Erosion; is; the wearing away of the land surface by water, wind, ice, or other geologic agents and by such processes as gravitational creep)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>002.31A Hardland Grassland is a term commonly used to distinguish the silty and clayey grassland areas from those of the sandy grassland areas.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.92</td>
+<td>(002.31A Hardland Grassland; is; a term commonly used to distinguish the silty and clayey grassland areas from those of the sandy grassland areas)</td>
+</tr>
+<tr>
+<td>0.85</td>
+<td>(a term; commonly used; to distinguish the silty and clayey grassland areas from those of the sandy grassland areas)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>0.04593 kg Used a triple beam balance to mass a golf ball.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.90</td>
+<td>(0.04593 kg; Used; a triple beam balance; to mass a golf ball)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>.007 THROWING OBJECTS FROM BICYCLE: No object shall be thrown from a moving or stationary bicycle.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.90</td>
+<td>(No object; shall be thrown; from a moving or stationary bicycle)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>0.0 Chameleon helps to maintain large websites which are composed of many files.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.89</td>
+<td>(large websites; are composed; of many files)</td>
+</tr>
+<tr>
+<td>0.93</td>
+<td>(0.0 Chameleon; helps; to maintain large websites)</td>
+</tr>
+<tr>
+<td>0.91</td>
+<td>Context(0.0 Chameleon helps,List([0, 19))):(0.0 Chameleon; helps to maintain; large websites which are composed of many files)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>00 Science in Society Personal Needs 4.2 ab CURRICULAR CORRELATIONS GRADE: First CONTENT STANDARD: Physical Science CONTENT TOPIC: Simple Machines/Technology CONCEPT: Work involves movement of objects through a distance.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.81</td>
+<td>(Work; involves; movement of objects)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>00 To understand physical and chemical changes in matter INSTRUCTIONAL OBJECTIVES: The learner will: 3.01 identify properties of materials as they undergo physical</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.54</td>
+<td>(00; To understand; physical and chemical changes in matter)</td>
+</tr>
+<tr>
+<td>0.36</td>
+<td>(they; undergo; physical)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>00 To understand safety in the use of machines INSTRUCTIONAL OBJECTIVES:</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.59</td>
+<td>(00; To understand; safety in the use of machines INSTRUCTIONAL OBJECTIVES)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>00 To understand the differences among producers, consumers, and decomposers INSTRUCTIONAL OBJECTIVES: The learner will: 1.01 define a producer, a consumer, and a decomposer.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.49</td>
+<td>(00; To understand; the differences among producers, consumers, and decomposers)</td>
+</tr>
+<tr>
+<td>0.83</td>
+<td>Context(00 To understand,List([0, 16))):(The learner; will define; a producer, a consumer, and a decomposer)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>00 To understand the life cycle of non-seed bearing plants INSTRUCTIONAL OBJECTIVES: The learner will: 4.01 illustrate the life cycle of a fern.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.82</td>
+<td>(The learner; will illustrate; the life cycle of a fern)</td>
+</tr>
+<tr>
+<td>0.48</td>
+<td>Context(The learner will illustrate,List([85, 118))):(00; To understand; the life cycle of non-seed bearing plants)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>00 To understand the meaning of temperature INSTRUCTIONAL OBJECTIVES: The learner will: 3.01 relate air temperatures to Celsius and Fahrenheit thermometer scale readings.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.59</td>
+<td>(00; To understand; the meaning of temperature INSTRUCTIONAL OBJECTIVES)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>00 To understand the relationship of the earth and sun in changing from day to night INSTRUCTIONAL OBJECTIVES: The learner will: 3.01 understand that day and night are caused by the rotation of the earth.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.70</td>
+<td>(00; To understand; the relationship of the earth and sun in changing from day to night INSTRUCTIONAL OBJECTIVES)</td>
+</tr>
+<tr>
+<td>0.63</td>
+<td>(The learner; will understand; that day and night)</td>
+</tr>
+<tr>
+<td>0.90</td>
+<td>Context(The learner will understand,List([111, 144))):(that day and night; are caused; by the rotation of the earth)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>01 April 1969 The ATM would be a manned solar observatory making measurements of the Sun by telescopes and instruments above</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.96</td>
+<td>(The ATM; would be; a manned solar observatory making measurements of the Sun by telescopes and instruments)</td>
+</tr>
+<tr>
+<td>0.93</td>
+<td>(a manned solar observatory; making; measurements of the Sun)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>01 April 1969 The ATM would be a manned solar observatory making measurements of the Sun by telescopes and instruments above the Earth's atmosphere.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.96</td>
+<td>(The ATM; would be; a manned solar observatory making measurements of the Sun by telescopes and instruments above the Earth's atmosphere)</td>
+</tr>
+<tr>
+<td>0.93</td>
+<td>(a manned solar observatory; making; measurements of the Sun)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>0.1% water can lower the melting temperature of peridotite by 100 C.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.91</td>
+<td>(0.1% water; can lower; the melting temperature of peridotite)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>( 020 ) Celsius &#176;C The international temperature scale where water freezes at 0 (degrees) and boils at 100 (degrees).</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.89</td>
+<td>(water; freezes; at 0 (degrees)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>02/15/00 - Global warming ruffles wildlife Climate change may be disrupting the hibernation and migration patterns of animals and birds, according to a recent study.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.94</td>
+<td>(02/15/00 - Global warming; ruffles; wildlife Climate change may be disrupting the hibernation and migration patterns of animals and birds, according to a recent study)</td>
+</tr>
+<tr>
+<td>0.89</td>
+<td>Context(02/15/00 - Global warming ruffles,List([0, 33))):(wildlife Climate change; may be disrupting; the hibernation and migration patterns of animals and birds)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>0.216 kJ 0.0108 kJ 0.0180 kJ 240 kJ 216 kJ ANSWER The normal boiling point of a substance is defined to be the temperature at which the liquid phase of the substance is in equilibrium with the gas phase at 1 atm pressure.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.82</td>
+<td>(The normal boiling point of a substance; is defined; )</td>
+</tr>
+<tr>
+<td>0.95</td>
+<td>(The normal boiling point of a substance; to be; the temperature at which the liquid phase of the substance is in equilibrium with the gas phase at 1 atm pressure)</td>
+</tr>
+<tr>
+<td>0.98</td>
+<td>(the liquid phase of the substance; is; in equilibrium with the gas phase at 1 atm pressure; L:the temperature)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>02 EARTH - MOON SYSTEM A large ball and a small ball at the ends of a rod represent the Earth and the Moon.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.97</td>
+<td>(A large ball and a small ball at the ends of a rod; represent; the Earth and the Moon)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>02 life 2c: Many characteristics of an organism are inherited from the parents.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.93</td>
+<td>(Many characteristics of an organism; are inherited; from the parents)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>02 - Make observations using a combination of senses and communicate observations.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.92</td>
+<td>(02 - Make observations; using; a combination of senses)</td>
+</tr>
+<tr>
+<td>0.91</td>
+<td>(02 - Make observations; communicate; observations)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p><em>02</em> References/Lifestage Reference Numbers General 01, 02 Important 02 Environmental Associations Lifestage Environmental Association Adult Substrate: Mud or silt Adult Substrate: Sand Adult Substrate: Rocks - large stone masses Adult Relation to Substrate: Specified in Comments Adult Bottom Type: Mud or silt Adult Bottom Type: Sand Adult Bottom Type: Gravel - mixture of pebble and stone fragments Adult Bottom Type: Rubble - rough, irregular Adult Water Depth Utilized: Specified in Comments Adult Aquatic Habitat: Pool Adult Riparian Habitat: Specified in Comments Breeding Adult Water Temp.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.91</td>
+<td>(Comments; Breeding; Adult Water Temp)</td>
+</tr>
+<tr>
+<td>0.82</td>
+<td>(irregular Adult Water Depth; Utilized; )</td>
+</tr>
+<tr>
+<td>0.93</td>
+<td>(irregular Adult Water Depth; Specified; L:in Comments)</td>
+</tr>
+<tr>
+<td>0.38</td>
+<td>(Substrate; [is] Adult [of]; Environmental Associations Lifestage Environmental Association)</td>
+</tr>
+<tr>
+<td>0.38</td>
+<td>(Substrate; [is] Adult [of]; Sand)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>03-06T21:51:00Z 4 748 4264 School District of Coleman 35 8 5236 9.2720 0 0 English Language Arts A. Reading/Literature A.4.1 Use effective reading strategies to achieve their purposes in reading A.4.2 Read, interpret, and critically analyze literature A.4.3 Read and discuss literary and nonliterary texts in order to understand human experience A.4.4 Read to acquire information B. Writing B.4.1 Create or produce writing to communicate with different audiences for a variety of purposes B.4.2 Plan, revise, edit, and publish clear and effective writing B.4.3 Understand the function of various forms, structures, and punctuation marks of standard American English and use them appropriately in written communications C. Oral Language C.4.2 Listen to and comprehend oral communications D. Language D.4.1 Develop their vocabulary and ability to use words, phrases, idioms, and various grammatical structures as a means of improving communication E. Media &amp; Technology E.4.1 Use computers to acquire, organize, analyze, and communicate information F. Research &amp; Inquiry F.4.1 Conduct research and inquiry on self-selected or assigned topics, issues, or problems and use an appropriate form to communicate their findings Math A. Mathematical Processes A.4.2 Communicate mathematical ideas in a variety of ways, including words, numbers, symbols, pictures, charts, graphs, tables, diagrams, and models<em> A.4.3 Connect mathematical learning with other subjects, personal experiences, current events, and personal interests D. Measurement D.4.1 Recognize and describe measurable attributes</em>, such as length, liquid capacity, time, weight (mass), temperature, volume, monetary value, and angle size, and identify the appropriate units to measure them E. Statistics &amp; Probability E.4.1 Work with data in the context of real-world situations by formulating questions that lead to data collection and analysis determining what data to collect and when and how to collect them collecting, organizing, and displaying data drawing reasonable conclusions based on data Science A. Science Connections A.4.1 When conducting science investigations<em>, ask and answer questions that will help decide the general areas of science being addressed B. Nature of Science B.4.1 Use encyclopedias, source books, texts, computers, teachers, parents, other adults, journals, popular press, and various other sources, to help answer science-related questions and plan investigations C. Science Inquiry C.4.1 Use the vocabulary of the unifying themes</em> to ask questions about objects, organisms, and events being studied C.4.2 Use the science content being learned to ask questions, plan investigations<em>, make observations</em>, make predictions<em>, and offer explanations</em> C.4.3 Select multiple sources of information to help answer questions selected for classroom investigations<em> C.4.5 Use data they have collected to develop explanations</em> and answer questions generated by investigations<em> C.4.6 Communicate the results of their investigations</em> in ways their audiences will understand by using charts, graphs, drawings, written descriptions, and various other means Social Studies A. Geography: People, Places, and Environments A.4.2 Locate on a map or globe physical features such as continents, oceans, mountain ranges, and land forms, natural features such as resources, flora, and fauna;</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.98</td>
+<td>(03-06T21:51:00Z 4 748 4264 School District of Coleman 35 8 5236 9.2720 0 0 English Language Arts A. Reading/Literature A.4.1 Use effective reading strategies; to achieve; their purposes; T:in reading A.4.2 Read)</td>
+</tr>
+<tr>
+<td>0.91</td>
+<td>(A.4.3; discuss; literary and nonliterary texts; in order)</td>
+</tr>
+<tr>
+<td>0.91</td>
+<td>(questions; will help; decide the general areas of science being addressed B. Nature of Science B.4.1 Use encyclopedias, source books, texts, computers, teachers, parents, other adults, journals, popular press, and various other sources)</td>
+</tr>
+<tr>
+<td>0.91</td>
+<td>Context(questions will help,List([2160, 2184))):(questions; will help decide; the general areas of science being addressed B. Nature of Science B.4.1 Use encyclopedias, source books, texts, computers, teachers, parents, other adults, journals, popular press, and various other sources)</td>
+</tr>
+<tr>
+<td>0.82</td>
+<td>(Technology E.4.1 Use computers; to acquire; )</td>
+</tr>
+<tr>
+<td>0.85</td>
+<td>(data; have collected; to develop explanations* and answer questions)</td>
+</tr>
+<tr>
+<td>0.51</td>
+<td>Context(data have collected,List([2867, 2891))):(they; to develop; explanations*)</td>
+</tr>
+<tr>
+<td>0.42</td>
+<td>Context(data have collected,List([2867, 2891))):(they; to answer; questions generated by investigations<em> C.4.6 Communicate the results of their investigations</em> in ways)</td>
+</tr>
+<tr>
+<td>0.89</td>
+<td>(data; drawing; reasonable conclusions)</td>
+</tr>
+<tr>
+<td>0.75</td>
+<td>(Technology E.4.1 Use computers; to organize; )</td>
+</tr>
+<tr>
+<td>0.29</td>
+<td>(their audiences; will understand; )</td>
+</tr>
+<tr>
+<td>0.58</td>
+<td>Context(their audiences will understand,List([3030, 3061))):(their audiences; will understand by using; charts, graphs, drawings)</td>
+</tr>
+<tr>
+<td>0.75</td>
+<td>(Technology E.4.1 Use computers; to analyze; )</td>
+</tr>
+<tr>
+<td>0.94</td>
+<td>(human experience A.4.4 Read; to acquire; information)</td>
+</tr>
+<tr>
+<td>0.80</td>
+<td>(objects, organisms, and events; being studied; )</td>
+</tr>
+<tr>
+<td>0.90</td>
+<td>(questions; generated; by investigations<em> C.4.6 Communicate the results of their investigations</em> in ways)</td>
+</tr>
+<tr>
+<td>1.00</td>
+<td>(Inquiry F.4.1 Conduct research and inquiry on self-selected or assigned topics, issues, or problems and use an appropriate form to communicate their findings Math A. Mathematical Processes A.4.2 Communicate mathematical ideas in a variety of ways, including words, numbers, symbols, pictures, charts, graphs, tables, diagrams, and models<em> A.4.3 Connect mathematical learning with other subjects, personal experiences, current events, and personal interests D. Measurement D.4.1 Recognize and describe measurable attributes</em>, such as length, liquid capacity, time, weight (mass), temperature, volume, monetary value, and angle size, and identify the appropriate units to measure them E. Statistics &amp; Probability E.4.1 Work with data in the context of real-world situations by formulating questions; lead; )</td>
+</tr>
+<tr>
+<td>0.58</td>
+<td>(B.; Writing; )</td>
+</tr>
+<tr>
+<td>0.66</td>
+<td>Context(B. Writing,List([380, 390))):(B.4.1; Create; )</td>
+</tr>
+<tr>
+<td>0.86</td>
+<td>Context(B. Writing,List([380, 390))):(B.; Writing produce; writing to communicate with different audiences for a variety of purposes B.4.2 Plan)</td>
+</tr>
+<tr>
+<td>0.89</td>
+<td>(questions; selected; for classroom investigations*)</td>
+</tr>
+<tr>
+<td>0.93</td>
+<td>(D. Language D.4.1 Develop; to ask; questions)</td>
+</tr>
+<tr>
+<td>1.00</td>
+<td>(Inquiry F.4.1 Conduct research and inquiry on self-selected or assigned topics, issues, or problems and use an appropriate form to communicate their findings Math A. Mathematical Processes A.4.2 Communicate mathematical ideas in a variety of ways, including words, numbers, symbols, pictures, charts, graphs, tables, diagrams, and models<em> A.4.3 Connect mathematical learning with other subjects, personal experiences, current events, and personal interests D. Measurement D.4.1 Recognize and describe measurable attributes</em>, such as length, liquid capacity, time, weight (mass), temperature, volume, monetary value, and angle size, and identify the appropriate units to measure them E. Statistics &amp; Probability E.4.1 Work with data in the context of real-world situations by formulating questions; to ask; questions about objects, organisms, and events)</td>
+</tr>
+<tr>
+<td>0.79</td>
+<td>Context(Inquiry F.4.1 Conduct research and inquiry on self - selected or assigned topics , issues , or problems and use an appropriate form to communicate their findings Math A. Mathematical Processes A.4.2 Communicate mathematical ideas in a variety of ways , including words , numbers , symbols , pictures , charts , graphs , tables , diagrams , and models<em> A.4.3 Connect mathematical learning with other subjects , personal experiences , current events , and personal interests D. Measurement D.4.1 Recognize and describe measurable attributes</em> , such as length , liquid capacity , time , weight ( mass ) , temperature , volume , monetary value , and angle size , and identify the appropriate units to measure them E. Statistics &amp; amp ; Probability E.4.1 Work with data in the context of real - world situations by formulating questions to ask,List([1069, 2539))):(C.4.2; Use; D. Language D.4.1 Develop their vocabulary and ability to use words, phrases, idioms, and various grammatical structures as a means of improving communication E. Media &amp; Technology E.4.1 Use computers to acquire, organize, analyze, and communicate information F. Research &amp; Inquiry F.4.1 Conduct research and inquiry on self-selected or assigned topics, issues, or problems and use an appropriate form to communicate their findings Math A. Mathematical Processes A.4.2 Communicate mathematical ideas in a variety of ways, including words, numbers, symbols, pictures, charts, graphs, tables, diagrams, and models<em> A.4.3 Connect mathematical learning with other subjects, personal experiences, current events, and personal interests D. Measurement D.4.1 Recognize and describe measurable attributes</em>, such as length, liquid capacity, time, weight (mass), temperature, volume, monetary value, and angle size, and identify the appropriate units to measure them E. Statistics &amp; Probability E.4.1 Work with data in the context of real-world situations by formulating questions that lead to data collection and analysis determining what data to collect and when and how to collect them collecting, organizing, and displaying data drawing reasonable conclusions based on data Science A. Science Connections A.4.1 When conducting science investigations<em>, ask and answer questions that will help decide the general areas of science being addressed B. Nature of Science B.4.1 Use encyclopedias, source books, texts, computers, teachers, parents, other adults, journals, popular press, and various other sources, to help answer science-related questions and plan investigations C. Science Inquiry C.4.1 Use the vocabulary of the unifying themes</em> to ask questions about objects, organisms, and events being studied C.4.2 Use the science content being learned to ask questions)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>( 030 ) Deliquescent Melting and becoming a liquid by absorbing moisture.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.93</td>
+<td>(030 ) Deliquescent Melting; becoming; a liquid)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>03 Electrochemical Devices which use chemical processes to Energy Storage produce electricity, such as electric batteries and electrical fuel cells.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.90</td>
+<td>(03 Electrochemical Devices; produce; electricity)</td>
+</tr>
+<tr>
+<td>0.92</td>
+<td>Context(03 Electrochemical Devices produce,List([0, 81))):(03 Electrochemical Devices; produce electricity use; chemical processes; to Energy Storage)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>0-400 NTU Turbidimetric/Pocket&#153; Turbidimeter MEL P/A Safe Drinking Water Laboratory When you need to check the potability of a water source, the MEL P/A Lab provides fast, easy testing.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.93</td>
+<td>(A Safe; Drinking; Water Laboratory; T:When you need to check the potability of a water source)</td>
+</tr>
+<tr>
+<td>0.90</td>
+<td>(A Lab; provides; fast, easy testing)</td>
+</tr>
+<tr>
+<td>0.55</td>
+<td>(you; need; to check the potability of a water source)</td>
+</tr>
+<tr>
+<td>0.55</td>
+<td>Context(you need,List([94, 102))):(you; need to check; the potability of a water source)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>05/11/01 - Pests and weeds to dominate Earth London: Evolution scientists yesterday warned of the spread of a global "pest and weed" environment, with animals and plants such as rats, cockroaches, nettles and thistles flourishing at the expense of more specialised wild organisms.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.94</td>
+<td>(05/11/01 - Pests and weeds; to dominate; Earth London)</td>
+</tr>
+<tr>
+<td>0.96</td>
+<td>(Evolution scientists; warned; of the spread of a global "pest and weed" environment; T:yesterday)</td>
+</tr>
+<tr>
+<td>0.75</td>
+<td>(nettles and thistles; flourishing; )</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>0.5-2 unit Climate, geology, plants, animals, and human history, emphasizing ecological adaptations to a cold mountain environment in the vicinity of one of the southernmost large glaciers in North America.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.93</td>
+<td>(plants, animals, and human history; emphasizing; ecological adaptations)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>059463&#133; Simply stated, a string will vibrate when plucked, and will sound some note.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.93</td>
+<td>(a string; will sound; some note; T:when plucked)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>05 A simple electromagnet can be made with a nail wrapped with insulated wire.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.90</td>
+<td>(a nail; wrapped; with insulated wire)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>[05] STATE MINISTER ONAL: - ''TURKEY'S RATING NOTE WILL INCREASE THIS SUMMER'' NEW YORK - Recep Onal, the State Minister, said on Wednesday that Turkey's rating note will increase this summer.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.93</td>
+<td>(TURKEY'S RATING NOTE; WILL INCREASE; THIS SUMMER)</td>
+</tr>
+<tr>
+<td>0.71</td>
+<td>(NEW YORK - Recep Onal; said; T:on Wednesday; that Turkey's rating note will increase this summer)</td>
+</tr>
+<tr>
+<td>0.92</td>
+<td>Context(NEW YORK - Recep Onal said,List([79, 126))):(Turkey's rating note; will increase; T:this summer)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>0.7 bya age of multicellular organisms cells of multicellular organism can specialize for specific functions -leads to tissues, organs, etc. and allows for increasingly complex and organized life forms.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.95</td>
+<td>(0.7 bya age of multicellular organisms cells of multicellular organism; can specialize; for specific functions)</td>
+</tr>
+<tr>
+<td>0.83</td>
+<td>(0.7 bya age of multicellular organisms cells of multicellular organism; leads; )</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>(08.40) A. RELIGION (08.41) Gods and the Origins of Religion All living organisms constantly compete for limited resources.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.95</td>
+<td>(08.40) A. RELIGION (08.41) Gods and the Origins of Religion All; constantly compete; for limited resources)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>09/06/01 - Cellular Respiration Cellular respiration is a process by which cells harvest the energy stored in food.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.96</td>
+<td>(09/06/01 - Cellular Respiration Cellular respiration; is; a process by which cells harvest the energy)</td>
+</tr>
+<tr>
+<td>0.89</td>
+<td>(cells; harvest; the energy stored in food; L:a process)</td>
+</tr>
+<tr>
+<td>0.90</td>
+<td>(the energy; stored; L:in food)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>09-35-3717 The Magnetic Field Electric current in long straight wire produces a field which circles the wire.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.96</td>
+<td>(09-35-3717 The Magnetic Field Electric current in long straight wire; produces; a field which circles the wire)</td>
+</tr>
+<tr>
+<td>0.89</td>
+<td>(a field; circles; the wire)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>0a+++As+for+hens+laying+in+the+winter%2c+my+hens+don%27t+know+they%27re+not+supposed+to%2e++I+offer+no+artificial+light%2c+but+they+just+keep+on+laying+except+during+hot%2c+dry+periods%2e Hi+there+has+any+one+got+the+answer+%3f+I+have+11+hens+and+2+cockerals+in+a+free+range+flock+Why+have+they+stopped+laying+it+is+Summer+in+NZ+They+laid+really+well+in+the+spring+but+now+have+vertually+stopped%2e+They+have+claen+nest+baxes+and+plenty+of+food+and+fresh+water%2e+They+are+not+laying+away+as+I+havnt+found+any+nests+ I+know+very+little+about+chickens+and+how+to+raise+them%2c+but+I%27m+willing+to+learn%2e++I%27m+planning+to+show+my+chickens+with+our+school%27s+FFA%2e++I+need+to+know+what+chickens+are+best+for+a+beginning+shower%2e++How+many+chickens+I+should+raise%3f++What+I+should+feed+them%3f%0aHow+much+should+I+feed+them%3f++Where+should+I+keep+them%3f++Should+I+keep+them+each+in+their+own+separate+coop+or+combine+the+coops%3f++Please+help+me%2e Ashley%2c+Personal+help%2c+rather+than+a+few+discussion+page+words%2c+or+even+books%2c+is+best%2e++Is+there+someone+in+your+area+that+raises+Poultry%3f++Ask+at+your+local+Feed+Store+%28you+need+to+know+those+people%21%29+for+names+of+people+who+purchase+poultry+feed%2e++Visit+their+places+and+see+how+they+house+and+feed+their+birds%2e++Talk+about+quantity%2c+and+breeds%2e++You+will+probably+want+what+are+called+%26quot%3bproduction%26quot%3b+birds+for+FFA%2c+rather+than+just+beautiful+chickens+that+catch+your+fancy%2e++And+you+will+want+to+research+sources+of+healthy+birds+%28probably+chicks%29+to+start+with%2e++If+your+Fairs+or+Exhibitions+are+in+August%2c+you+barely+have+time+to+raise+chicks+to+exhibition+age%2c+if+you+start+next+month%21+So+get+going%2c+and+ask+your+FFA+leader+and+County+Agent+for+folders+and+material+about+Poultry+Projects%2e++Good+luck%2c+CJR Hi%2c+this+may+be+the+dumbest+letter+you+have+ever+gotten%2e+While+at+work+we+were+discussing+the%0a+survivor+show+and+the+chickens%2e+We+were+talking+about+why+they+killed+the+rooster+first%2e+THen%0a+we+started+wondering%2e%2e%2eHow+often+do+hens+lay%3f+every+day%3f+how+many+eggs%3f+How+often+does+a%0a+hen+need+to+be+fertilized+to+lay+a+fertilized+egg%3f+Once%3f+Once+a+week%3f+We+did+not+know+how+dumb+we+were+until+we+started+thinking+about+chickens%2e%0aThanks%0aP%2eS%2e+we+are+all+city+born+and+raised Well%2c+I+love+Australia%2c+but+not+Survivors%2d%2dI+did+see+a+bit+of+the+obtaining+of+the+chickens%21++Roosters+are+not+needed+for+egg+laying%21%21%21++Roosters+crow+and+provide+fertile+eggs%2d%2dotherwise+not+needed%21+That+is+all+they+do%2e+Hens+lay+eggs%2d%2dthat+is+what+they+do%2e++Hens+will+lay+an+egg+every+day+or+two%2c+if+properly+fed+and+cared+for%2e+The+eggs+you+buy+are+not+fertilized%2d%2dthose+hens+have+never+seen+a+rooster%2e++The+Survivors+will+not+be+around+long+enough+to+hatch+eggs%2c+if+that+was+their+objective%2e++And+in+their+setting%2c+the+hens+are+unlikely+to+lay+many+eggs%2c+anyway%2d%2dtrauma+and+change+of+home%2c+is+not+a+setting+that+a+hen+will+feel+comfortable%2e++Not+dumb+at+all%2c+am+just+sorry+that+so+many+%26quot%3bcity+born%26quot%3b+cannot+experience+the+joy+of+natural+things+%28city+parks+are+wonderful%2c+but+not+the+same%29+and+the+peace+and+slower+pace+that+farm+living+%28with+livestock+of+all+kinds%29+can+provide%2e++And+sorrier+still+that+that+kind+of+peace+is+disappearing+under+subdivisions+and+commercial+developments+on+the+best+soils+and+locations+for+healthy+food+production%2e++Forgive+me+for+throwing+in+this+last+part%2e++CJR+ Survivor+is+a+is+proof+of+how+many+people+in+the+US+are+stuopid%2c+pritive%2c+and+how+they+enjoy+watching+animals+be+tortured%2e++ I+did+not+know+they+tortured+animals+on+the+survivor+show%2e+I+do+not+watch+it+and+I+still+think+the+entire+premise+of+the+show+is+pretty+lame%2e+Anyway%2c+I+thank+you+for+your+comments+despite+your+rudeness%2e I+was+a+city+girl+who+moved+to+the+country+at+the+tender+age+of+14%2e++I+will+NEVER+live+in+the+city+again%21++I+am+also+new+to+raising+chickens%2e++I+have+two+girls%2c+ages+4+and+6%2c+and+we+are+having+the+best+time%21%21+They+have+been+involved+in+every+step%2c+from+picking+which+breed+to+own+%7bafter+much+research%2c+they+chose+RIR+and+Barred+Rocks%7d%2c+to+helping+to+build+the+cages%2e++Nothing+can+compare+to+the+lesson+learned+when+you+are+responsible+for+another+life+form%27s+health+and+well%2dbeing%2e++The+best+part+is+that+we+have+been+able+to+cover+a+wide+range+of+subjects+such+as+biology%2c+ecology%2c+mathematics%7bmeasuring+the+materials+to+build+the+coop%2c+and+measuring+feed%7d%2c+social+behaviors%2c+cooking%7bthey+love+boiled+eggs%21%7d%2c+and+even+the+dreaded+topic+of+sexuality%2e++I+recommend+to+EVERYONE+to+get+into+raising+some+type+of+farm+animal%2c+especially+if+they+have+children%21 I%27m+moving+onto+16+acres+in+a+few+weeks%2e+Raising+14+chicks+now%2c+which+I+plan+to+free+range%2e+3+Questions%3a%0a1%2e+I+need+to+get+a+dog+%28keep+the+coyotes+out+%26amp%3b+alert+me+when+I+have+visitors%29+and+I+don%27t+</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.89</td>
+<td>(21%; 2dotherwise+not+needed; %)</td>
+</tr>
+<tr>
+<td>0.95</td>
+<td>(0a+++As+for+hens+laying+in+the+winter%; 3f+I+have+11+hens+and+2+cockerals+in+a+free+range+flock+Why+have+they+stopped+laying+it+is+Summer+in+NZ+They+laid+really+well+in+the+spring+but+now+have+vertually+stopped; T:2e Hi+there+has+any+one+got+the+answer+%)</td>
+</tr>
+<tr>
+<td>0.73</td>
+<td>Context(0a+++As+for+hens+laying+in+the+winter % 3f+I+have+11+hens+and+2+cockerals+in+a+free+range+flock+Why+have+they+stopped+laying+it+is+Summer+in+NZ+They+laid+really+well+in+the+spring+but+now+have+vertually+stopped,List([0, 395))):(0aP%2eS%; 2e+we+are+all+city+born+and+raised; )</td>
+</tr>
+<tr>
+<td>0.47</td>
+<td>Context(0a+++As+for+hens+laying+in+the+winter % 3f+I+have+11+hens+and+2+cockerals+in+a+free+range+flock+Why+have+they+stopped+laying+it+is+Summer+in+NZ+They+laid+really+well+in+the+spring+but+now+have+vertually+stopped 0aP % 2eS % 2e+we+are+all+city+born+and+raised,List([0, 2343))):(I; %; 27m+moving+onto+16+acres+in+a+few+weeks%)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>0 C is defined as the melting point of ice and 100 C is the temperature of boiling water, at ocean level.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.83</td>
+<td>(0 C; is defined; as the melting point of ice)</td>
+</tr>
+<tr>
+<td>0.94</td>
+<td>(100 C; is; the temperature of boiling water, at ocean level)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>0 converts one unit of measure to another including temperature (Fahrenheit to Celsius, Celsius to Fahrenheit), angles, areas, distance, energy, mass, power, and volume (ounces to liters).</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.38</td>
+<td>(0; converts; one unit of measure; to another)</td>
+</tr>
+<tr>
+<td>0.39</td>
+<td>(Fahrenheit ) , angles , areas , distance , energy , mass; [is]; power)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>0 C would be pure water.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.87</td>
+<td>(0 C; would be; pure water)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>0 Help: Soil patch next day functions: do nutrient cycling Nutrient cycling in the soil patch includes cycling of nitrogen, phosphorus and carbon (decomposition).</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.50</td>
+<td>(nutrient; includes; cycling of nitrogen, phosphorus and carbon (decomposition)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>0K is actually -273.15 degrees Celsius or -459.76 degrees Fahrenheit, another two scales of temperature used in daily life.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.94</td>
+<td>(0K; is; actually -273.15 degrees Celsius or -459.76 degrees Fahrenheit)</td>
+</tr>
+<tr>
+<td>0.89</td>
+<td>(temperature; used; L:in daily life)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>0] MAGNIFICATION BY MICROSCOPE LENSES Compound microscopes magnify small things and allow us to see more detail.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.92</td>
+<td>(0] MAGNIFICATION BY MICROSCOPE LENSES Compound microscopes; magnify; small things)</td>
+</tr>
+<tr>
+<td>0.81</td>
+<td>(0] MAGNIFICATION BY MICROSCOPE LENSES Compound microscopes; allow; us to see more detail)</td>
+</tr>
+<tr>
+<td>0.40</td>
+<td>Context(0 ] MAGNIFICATION BY MICROSCOPE LENSES Compound microscopes allow,List([0, 89))):(us; to see; more detail)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>0) Moon Phases &amp; Earth Phases over 1 Lunar Month Moon Phases seen from Earth (3.2Mb QuickTime Movie) Earth Phases seen from the Moon (3.0Mb QuickTime Movie) These movies show time-lapsed views of what (a) an astronomer on earth would see looking up at the Moon, and (b) what an astronaut standing on the Moon's near-side at the location of the Apollo 17 landing (Taurus-Littrow Valley) would see looking up at the Earth at the same time over the course of a little over 1 Lunar Synodic Month.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.93</td>
+<td>(Earth Phases over 1 Lunar Month Moon Phases; seen; from Earth)</td>
+</tr>
+<tr>
+<td>0.93</td>
+<td>(Earth Phases; looking; up; at the Moon)</td>
+</tr>
+<tr>
+<td>0.75</td>
+<td>(Earth Phases; seen; )</td>
+</tr>
+<tr>
+<td>0.94</td>
+<td>Context(Earth Phases seen,List([105, 122))):(These movies; show; time-lapsed views of what (a) an astronomer on earth)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p><strong>*</strong> 0 Ratings 0 Reviews Kids' Party Mix Submitted by: Valerie This snack mix combines candy coated chocolate pieces, pretzel sticks, Cheddar cheese crackers and raisins.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.95</td>
+<td>(Valerie; combines; candy coated chocolate pieces, pretzel sticks, Cheddar cheese crackers and raisins)</td>
+</tr>
+<tr>
+<td>0.94</td>
+<td>(candy; coated; chocolate pieces, pretzel sticks, Cheddar cheese crackers and raisins)</td>
+</tr>
+<tr>
+<td>0.38</td>
+<td>(Mix Submitted; [is] Party [of]; Reviews Kids)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>0 | | Stromatolite Fossils in Hakatai Shale | Comanche Point Vicinity | Cape Solitude | Havasu Canyon | South Rim Trail | Hermit's Trail to Dripping Springs | Grand Angel Traverse | Under Construction by Bob's Rock Shop Havasu Canyon - Hualapai Hilltop to Beaver Falls Location: Havasupai Indian Reservation / Grand Canyon National Park Geological Formations: Toroweap Formation, Coconino Sandstone, Hermit Formation, Supai Group, Surprise Canyon Formation, Redwall Formation, Muav Limestone, Travertine Deposits Other Attractions: Supai Indian village, several of the largest and most beautiful waterfalls in Grand Canyon, pools and swimming holes in Havasu Creek, extensive riparian areas, late 1800s mining activity and relics Hiking Difficulty: Easy to Moderate for two day and longer hikes Access: No bus service or public transportation, good road (Highway 18) to parking lot at Hualapai Hilltop.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.92</td>
+<td>(Travertine; Deposits; Other Attractions)</td>
+</tr>
+<tr>
+<td>0.38</td>
+<td>(Traverse</td>
+</tr>
+<tr>
+<td>0.38</td>
+<td>(Park Geological; [is] National [of]; Grand Canyon)</td>
+</tr>
+<tr>
+<td>0.38</td>
+<td>(Shop Havasu Canyon; [is] Rock [of]; Bob)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>$100,000 to do an environmental clean up on properties the City acquired this year;</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.88</td>
+<td>(properties; acquired; T:this year)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10:00-11:00 WHEELS AND AXLES Students will be asked to move a heavy brick from one point to another using only axles.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.91</td>
+<td>(10:00-11:00 WHEELS AND AXLES Students; will be asked; to move a heavy brick from one point to another using only axles)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>100.0 DEMONSTRATE THE DIFFERENCE BETWEEN A PHYSICAL CHANGE IN A SUBSTANCE (FOR EXAMPLE: ALTERING THE SHAPE, FORM, VOLUME OR DENSITY) AND A CHEMICAL CHANGE (FOR EXAMPLE: PRODUCING NEW SUBSTANCES WITH DIFFERENT CHARACTERISTICS)--</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.91</td>
+<td>(A CHEMICAL CHANGE (FOR EXAMPLE; PRODUCING; NEW SUBSTANCES)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>(#100-303) Extra marbles recommended for: Gravity Drop , Rollercoaster , and Marble Launcher .</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.96</td>
+<td>(Extra marbles; recommended; for: Gravity Drop , Rollercoaster , and Marble Launcher)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>100 C is made by boiling water on a stove.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.73</td>
+<td>(100 C; is made; )</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>100 C. is the boiling point of water.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.94</td>
+<td>(100 C.; is; the boiling point of water)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>: 100-M693-1-no.16 Covering peach trees to protect the fruit buds ;</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.96</td>
+<td>(100-M693-1-no.16 Covering peach trees; to protect; the fruit buds)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>100 oak trees have been set out in Deering Oaks;</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.93</td>
+<td>(100 oak trees; have been set out; L:in Deering Oaks)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>100 o C is the boiling point of water.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.85</td>
+<td>(C; is; the boiling point of water)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>(1.0) &#149; Analyze growth and development of humans (explain physical, mental, emotional, and social development, explain death as a stage in the human life cycle, explain ways in which human needs are satisfied).</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.77</td>
+<td>(human needs; are; satisfied)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10.15 Use microscopes to observe a variety of cells from each of the kingdoms.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.93</td>
+<td>(10.15 Use microscopes; to observe; a variety of cells from each of the kingdoms)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10/18/97 &quot;Bulls Island Tour&quot; - Join refuge staff for a guided tour of Bulls Island and learn of the conservation management programs for endangered red wolves, loggerhead sea turtles, and migrating waterfowl.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.94</td>
+<td>(Bulls Island Tour&quot; Join; refuge staff; for a guided tour of Bulls Island)</td>
+</tr>
+<tr>
+<td>0.96</td>
+<td>(Bulls Island Tour&quot; learn; of the conservation management programs for endangered red wolves, loggerhead sea turtles, and migrating waterfowl)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>1.01 observe and use a simple machine.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.26</td>
+<td>(1.01; observe; )</td>
+</tr>
+<tr>
+<td>0.50</td>
+<td>(1.01; use; a simple machine)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>101 Title: He Took His Eye off the Finish Line On March 6, 1987, Eamon Coughlan, the Irish world record holder at 1500 meters, was running in a qualifying heat at the World Indoor Track Championships in Indianapolis.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.35</td>
+<td>(He; Took; His Eye; off the Finish Line; T:On March 6, 1987)</td>
+</tr>
+<tr>
+<td>0.76</td>
+<td>(Eamon Coughlan; was running; )</td>
+</tr>
+<tr>
+<td>0.39</td>
+<td>(Eamon Coughlan; [is] the Irish world record holder at; 1500 meters)</td>
+</tr>
+<tr>
+<td>0.39</td>
+<td>(Eamon Coughlan; [is] the world record holder [from]; Ireland)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>102.00 A.5 Auto Wrecking Yard To operate an automobile wrecking yard, defined as an area that stores salvage vehicles.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.91</td>
+<td>(an automobile wrecking yard; defined; as an area)</td>
+</tr>
+<tr>
+<td>0.89</td>
+<td>(an area; stores; salvage vehicles)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10--20 inch strips of insulated copper wire, 1/2 exposed on each end 10--40 inch strips of insulated copper wire, 1/2 exposed on each end 15--size "D" batteries 1--battery holder for 2 "D" batteries 10--compasses 25--iron nails, 4" long 1--box of paper clips, approx.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.96</td>
+<td>(10--20 inch strips of insulated copper wire, 1/2; exposed; T:on each end 10; 40 inch strips of insulated copper wire)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10/22/2000 Click here to start Table of Contents PPT Slide A delta is an emergent accumulation of sediment deposited at the mouth of a river as it flows into a standing body of water.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.95</td>
+<td>(10/22/2000 Click here to start Table of Contents PPT Slide A delta; is; an emergent accumulation of sediment deposited at the mouth of a river; T:as it flows into a standing body of water)</td>
+</tr>
+<tr>
+<td>0.93</td>
+<td>(an emergent accumulation of sediment; deposited; at the mouth of a river)</td>
+</tr>
+<tr>
+<td>0.52</td>
+<td>(it; flows; into a standing body of water)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10 22 kg (How much it weighs) Orbital Distance: 384,400 km (How far it is from Earth) Orbital Period: 28 days (How long it takes to make one orbit) Rotational Period: 28 days (How long it takes to rotate once on its axis) Orbital Velocity: 1.02 km/s (How fast it travels) Atmosphere: None Luna is the only natural satellite of Earth and is one of the darker objects in the solar system.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.19</td>
+<td>(it; weighs; )</td>
+</tr>
+<tr>
+<td>0.24</td>
+<td>(it; is; )</td>
+</tr>
+<tr>
+<td>0.19</td>
+<td>(it; travels; )</td>
+</tr>
+<tr>
+<td>0.95</td>
+<td>(None Luna; is; the only natural satellite of Earth)</td>
+</tr>
+<tr>
+<td>0.93</td>
+<td>(None Luna; is; one of the darker objects in the solar system)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>102, Ammunition and Explosives, 202.5 for a fuse, primer or igniter utilizing electrical energy for firing an ammunition or explosive device and subclass 322 for a blasting charge igniter fired by an electric current.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.96</td>
+<td>(a fuse, primer or igniter; utilizing; electrical energy; for firing an ammunition or explosive device and subclass 322 for a blasting charge igniter)</td>
+</tr>
+<tr>
+<td>0.92</td>
+<td>(a blasting charge igniter; fired; by an electric current)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>102 COLORATION In the first segment, Jr. Naturalist Patrice explains how coloration is a structural adaptation that helps animals and plants survive in their environment.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.91</td>
+<td>(Naturalist Patrice; explains; how coloration is a structural adaptation)</td>
+</tr>
+<tr>
+<td>0.74</td>
+<td>Context(Naturalist Patrice explains,List([41, 68))):(coloration; is; a structural adaptation that helps animals and plants survive in their environment)</td>
+</tr>
+<tr>
+<td>0.80</td>
+<td>(a structural adaptation; helps; survive in their environment)</td>
+</tr>
+<tr>
+<td>0.81</td>
+<td>Context(a structural adaptation helps,List([87, 121))):(animals and plants; survive; L:in their environment)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>1.02 explain the differences between adaptations involving deception and camouflage, including cryptic coloration, warning coloration, mimicry, and cite examples of each.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.54</td>
+<td>(1.02; explain; the differences between adaptations)</td>
+</tr>
+<tr>
+<td>0.93</td>
+<td>(adaptations; involving; deception and camouflage, including cryptic coloration, warning coloration, mimicry, and cite examples of each)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>1.02 relate that sound vibrations move through matter as sound waves.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.26</td>
+<td>(1.02; relate; that sound vibrations move through matter as sound waves)</td>
+</tr>
+<tr>
+<td>0.88</td>
+<td>Context(1.02 relate,List([0, 11))):(sound vibrations; move; through; T:matter; as sound waves)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10:30-11:30 PULLEYS Students will be introduced to "pulleys" as a simple machine.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.84</td>
+<td>(10:30-11:30 PULLEYS Students; will be introduced; to "pulleys; as a simple machine)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>1030Z (Accident Special) 700 feet scattered, measured ceiling 1,200 ft broken, 2,500 ft overcast, visibility 12 mi in very light snow grains, barometric pressure 1011.8 mb, temperature -4&#176;C, dew point -5&#176;C,</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.73</td>
+<td>(700 feet; scattered; )</td>
+</tr>
+<tr>
+<td>0.75</td>
+<td>(ceiling 1,200 ft; broken; )</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>[10] 3.1 Improvement of energy efficiency China is one of few countries using coal as the main energy source.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.68</td>
+<td>(10; is; one of few countries using coal as the main energy source)</td>
+</tr>
+<tr>
+<td>0.92</td>
+<td>(one of few countries; using; coal; as the main energy source)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>1.03 determine that sound is a form of energy.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.92</td>
+<td>(sound; is; a form of energy)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>103 for comminutors employing balls or rolls supported on frictional drive surfaces (ball chasers), also see subclasses 173+, below.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.93</td>
+<td>(comminutors; employing; balls or rolls supported on frictional drive surfaces (ball chasers))</td>
+</tr>
+<tr>
+<td>0.91</td>
+<td>(balls or rolls; supported; L:on frictional drive surfaces)</td>
+</tr>
+<tr>
+<td>0.89</td>
+<td>(103 for comminutors; also see below; subclasses)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10-4 Conduct research to better understand the chemical, physical, and toxicological properties of the chemical and biological substances that could be employed in acts of terrorism.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.96</td>
+<td>(10-4 Conduct research; to better understand; the chemical, physical, and toxicological properties of the chemical and biological substances)</td>
+</tr>
+<tr>
+<td>0.91</td>
+<td>(the chemical and biological substances; could be employed; L:in acts of terrorism)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>105-3 The Planet Earth An introduction to the composition and structure of the earth through a study of the physical and chemical processes (weathering, sedimentation, and the plate tectonic cycle) that have operated to produce the earth, its minerals, rocks, landforms, and economic mineral fuel deposits.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.97</td>
+<td>(the physical and chemical processes (weathering, sedimentation, and the plate tectonic cycle; have operated; to produce the earth)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>105-3 The Planet Earth Introduction to the composition and structure of the earth through a study of the physical and chemical processes (weathering, sedimentation, and the plate tectonic cycle) that have produced the earth, its minerals, rocks, landforms, and economic mineral fuel deposits.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.96</td>
+<td>(the physical and chemical processes (weathering, sedimentation, and the plate tectonic cycle; have produced; the earth, its minerals, rocks, landforms, and economic mineral fuel deposits)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>105 The Systems of the Human Body View reviews Description: Deals with the body's excretory, circulatory, respiratory, and digestive systems 106 Evolution View reviews Description: This game helps you to review the key terms under Evolution.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.93</td>
+<td>(106 Evolution View; reviews; Description)</td>
+</tr>
+<tr>
+<td>0.87</td>
+<td>(This game; helps; you to review the key terms under Evolution)</td>
+</tr>
+<tr>
+<td>0.95</td>
+<td>Context(This game helps,List([181, 196))):(105 The Systems of the Human Body View; reviews; Description)</td>
+</tr>
+<tr>
+<td>0.61</td>
+<td>Context(This game helps,List([181, 196))):(you; to review; the key terms under Evolution)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<h1 id="105-use-ceiling-fans-with-care-to-move-woodstove-heat-energy-adviser-our-heat-pump-died-last-summer-and-we-are-using-a-woostove-to-heat-our-small-home-this-year">105 Use ceiling fans with care to move woodstove heat Energy Adviser: Our heat pump died last summer and we are using a woostove to heat our small home this year.</h1>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.61</td>
+<td>(Our heat pump; died; T:last summer)</td>
+</tr>
+<tr>
+<td>0.56</td>
+<td>Context(Our heat pump died,List([71, 89))):(#105; Use; ceiling fans; to move woodstove heat Energy Adviser)</td>
+</tr>
+<tr>
+<td>0.26</td>
+<td>(we; are using; a woostove; to heat our small home this year)</td>
+</tr>
+<tr>
+<td>0.26</td>
+<td>Context(we are using,List([106, 118))):(we; are using a woostove to heat; our small home; T:this year)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>106.34 Explain the purpose of the following: a. Barometer: An instrument for measuring atmospheric pressure.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.54</td>
+<td>(106.34; Explain; the purpose of the following)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>1.06 describe ways to increase the strength of an electromagnet.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.54</td>
+<td>(1.06; describe; ways to increase the strength of an electromagnet)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>106) More for Less Looks at human uses of energy resources and how heavy reliance on fossil fuels (coal, oil, and natural gas) has put earth's climate at risk and also explores how communities have met their needs through improved efficiency, and increased reliance on renewable energy sources.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.93</td>
+<td>(coal, oil, and natural gas; increased; reliance on renewable energy sources)</td>
+</tr>
+<tr>
+<td>0.81</td>
+<td>(heavy reliance on fossil fuels; explores; how communities have met their needs through improved efficiency)</td>
+</tr>
+<tr>
+<td>0.78</td>
+<td>Context(heavy reliance on fossil fuels explores,List([67, 176))):(communities; have met; their needs)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<h1 id="107-05910592-carpet-sets-early-cars-originally-had-the-floors-trimmed-in-import-loop-carpet-later-cars-used-feintuft-velour-carpet-either-way-our-carpet-sets-authentically-retrim-all-the-areas-originally-carpeted">107-0591/0592 CARPET SETS Early cars originally had the floors trimmed in import loop carpet, later cars used Feintuft Velour carpet, either way our carpet sets authentically retrim all the areas originally carpeted.</h1>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.85</td>
+<td>(all the areas; carpeted; T:originally)</td>
+</tr>
+<tr>
+<td>0.41</td>
+<td>(our carpet; sets; )</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>$10.95 Quantity: Let's Count on Sesame Street &amp; CTW Muppets Henson Counting is fun when your child helps Elmo learn to count to ten in an exciting outdoor adventure.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.90</td>
+<td>($10.95 Quantity; is; fun; T:when your child helps Elmo learn to count to ten in an exciting outdoor adventure)</td>
+</tr>
+<tr>
+<td>0.78</td>
+<td>Context($ 10.95 Quantity is,List([0, 78))):(your child; helps; Elmo learn to count to ten in an exciting outdoor adventure)</td>
+</tr>
+<tr>
+<td>0.90</td>
+<td>Context($ 10.95 Quantity is your child helps,List([0, 104))):(Elmo; learn; to count to ten in an exciting outdoor adventure)</td>
+</tr>
+<tr>
+<td>0.90</td>
+<td>Context($ 10.95 Quantity is your child helps Elmo learn,List([0, 115))):(Elmo; learn to count; to ten in an exciting outdoor adventure)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>1.09 an echo is a reflected sound wave.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.93</td>
+<td>(1.09 an echo; is; a reflected sound wave)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10 Add masses to a pan balance and measure the deflection with a cathetometer.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.61</td>
+<td>(10; Add; masses; to a pan balance)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10 bicycle wheel top Extend the axle of a weighted bike wheel and terminate with a rubber ball.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.92</td>
+<td>(10 bicycle wheel top; Extend; the axle of a weighted bike wheel)</td>
+</tr>
+<tr>
+<td>0.91</td>
+<td>(10 bicycle wheel top; terminate; with a rubber ball)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>1.0 CONVENTIONAL GENERATOR THEORY 1.1 Configuration Conventional generators use either a stationary magnetic field (either permanent magnets or electromagnets) and a rotating coil armature), or they use a stationary coil (stator) and a rotating magnetic field.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.95</td>
+<td>(1.0 CONVENTIONAL GENERATOR THEORY 1.1 Configuration Conventional generators; use; either a stationary magnetic field (either permanent magnets or electromagnets) and a rotating coil armature)</td>
+</tr>
+<tr>
+<td>0.72</td>
+<td>(they; use; a stationary coil (stator) and a rotating magnetic field)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10 Cryptosporidium infections in lizards, tortoises and snakes have been reported with snakes being most likely to be clinically affected.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.88</td>
+<td>(10 Cryptosporidium infections in lizards, tortoises and snakes; have been reported; )</td>
+</tr>
+<tr>
+<td>0.75</td>
+<td>(snakes; being; most likely to be clinically affected)</td>
+</tr>
+<tr>
+<td>0.68</td>
+<td>(snakes; to be clinically affected; )</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10 Curie temperature Es-8 A counterweighted iron wire is attracted to a magnet until heated red with a flame.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.96</td>
+<td>(10 Curie temperature Es-8 A counterweighted iron wire; is attracted; to a magnet; T:until heated red with a flame)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10) Drought causes plants to shut down their growth process.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.86</td>
+<td>(10) Drought; causes; plants to shut down their growth process)</td>
+</tr>
+<tr>
+<td>0.65</td>
+<td>Context(10 ) Drought causes,List([0, 18))):(plants; to shut down; their growth process)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10 EXAM 1 11-12 Chapter 7 Photosynthesis: the light reactions Sunlight through photosynthesis is the ultimate source of energy that sustains life.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.92</td>
+<td>(10 EXAM 1 11-12 Chapter 7 Photosynthesis; is; the ultimate source of energy)</td>
+</tr>
+<tr>
+<td>0.88</td>
+<td>(energy; sustains; life)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>(10) given them [teachers] information on what they could do in the classroom food activities, health information, and good eating habits.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.62</td>
+<td>(they; could do; L:in the classroom food activities)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10 Here's how the apostle Paul described the growth process: &quot;I planted, Apollos watered, but God was causing the growth .</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.77</td>
+<td>(Apollos; watered; )</td>
+</tr>
+<tr>
+<td>0.86</td>
+<td>(God; was causing; the growth)</td>
+</tr>
+<tr>
+<td>0.16</td>
+<td>(I; planted; )</td>
+</tr>
+<tr>
+<td>0.40</td>
+<td>Context(I planted,List([67, 76))):(10; 's; Here)</td>
+</tr>
+<tr>
+<td>0.86</td>
+<td>Context(10 's I planted,List([0, 76))):(the apostle; described; the growth process)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10 Identifying, Controlling Variables, Relating Determine the relationship among a force on an object, the mass of the object, and the acceleration of the object.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.93</td>
+<td>(10 Identifying; Relating; Determine)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10) Igneous rocks are formed when magma cools and hardens either under the Earth's surface or when they push up through cracks in the Earth's crust.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.77</td>
+<td>(10) Igneous rocks; are formed; )</td>
+</tr>
+<tr>
+<td>0.43</td>
+<td>(they; push; up)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>(10) In technical terms, biometrics is the automated technique of measuring a physical characteristic or personal trait of an individual and comparing that characteristic or trait to a database for purposes of recognizing that individual.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.92</td>
+<td>(biometrics; is; the automated technique of measuring a physical characteristic or personal trait of an individual and comparing that characteristic or trait to a database for purposes of recognizing that individual; L:10) In technical terms)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10 ml graduated cylinder 4.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.90</td>
+<td>(10 ml; graduated; T:cylinder 4)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10% of the final grade should be based on performance tasks carried out either as separate activities or in conjunction with laboratory investigations.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.93</td>
+<td>(10% of the final grade; should be based; on performance tasks)</td>
+</tr>
+<tr>
+<td>0.73</td>
+<td>(performance tasks; carried out; )</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10 One liter of water in a beaker water and aluminum of 1 Kg total mass in another beaker are heated on the same hot plate.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.98</td>
+<td>(10 One liter of water in a beaker water and aluminum of 1 Kg total mass in another beaker; are heated; L:on the same hot plate)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p><strong> 10 Pennsylvania Fish Commission Aquatic Creatures Poster Series (in a poster TUBE) --</strong> 1 Life Cycle of a Frog Poster (rolled, in poster TUBE) <strong> 1 Ward s Visual Guide to Freshwater Protists by Wards (folded, blue, colorful poster) </strong> 10 Pond and Stream Study Guide by PA Fish and Boat Commission (laminated 11x17 color sheets) <strong> 1 Color Article entitled Pools of Spring by National Geographic (laminated 11x17 color sheets) </strong> 6 Mussels Found in the French Creek Watershed #1 (laminated 11x17 color sheets) <strong> 6 Mussels Found in the French Creek Watershed #2 (laminated 11x 17 color sheets) </strong> 1 Turtles of Pennsylvania by Wild Resouce Conservation Fun (folded) Box B Section 1 1 Mini Box - Mussels (including small jar of zebra mussels) 1 Mini Box - Macroinvertebrates Reference Collection (identified) <strong> Mosquito (Culex) Life History Mount </strong> Dragonfly Life Cycle Mount 1 Mini Box - Macroinvertebrates Unidentified Collection Box B Section 2 1 Mini Box of Microscope Slides <strong> 20 Algae slides </strong> 10 Life in a Pond Microslide Lesson (plus extra copies and teacher guide) <strong> 1 Planaria Explanomount </strong> 1 Hydra Cross Section Explanomount Small box of Slides: <strong> 3 Clam/Mussel slides </strong> 5 Fish part slides <strong> 3 Macroinvertebrates slides </strong> 6 Protozoa slides Brock Field Microscope (in white box) Carry Case of Macroinvertebrate Sorting/Viewing Equipment --<strong> 12 BioQuip forceps </strong> 16 eye droppers <strong> container of spoons and a small ruler </strong> 12 Magnifying Glasses <strong> 22 Magnifying Boxes (bug boxes) Box B Section 3 3 White Sorting Trays Stack of Bug Cups (cups with bug pictures used for sorting and identification) Basket of Aquatic Life Sampling Equipment </strong> 8 Multi-Plate Samplers (MPASS) <strong> Bundle of Leaf Pack Bags (onion sack bags) </strong> 1 Tupperware Container with 1 Plankton Net, Rope, and 1 Sample Bottle Box B &amp;</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.97</td>
+<td>(6 Protozoa slides; __; 1 Tupperware Container with 1 Plankton Net, Rope, and 1 Sample Bottle Box B)</td>
+</tr>
+<tr>
+<td>0.94</td>
+<td>(6 Mussels; Found; L:in the French Creek)</td>
+</tr>
+<tr>
+<td>0.84</td>
+<td>(1 Mini Box - Macroinvertebrates Reference Collection; identified; )</td>
+</tr>
+<tr>
+<td>0.96</td>
+<td>(5 Fish part slides; <strong>; 3 Macroinvertebrates slides </strong> 6 Protozoa slides Brock Field Microscope (in white box) Carry Case of Macroinvertebrate)</td>
+</tr>
+<tr>
+<td>0.92</td>
+<td>Context(5 Fish part slides <strong>,List([1191, 1212))):(3 Macroinvertebrates slides; </strong>; Carry Case of Macroinvertebrate)</td>
+</tr>
+<tr>
+<td>0.90</td>
+<td>(bug pictures; used; for sorting and identification)</td>
+</tr>
+<tr>
+<td>0.79</td>
+<td>(Wild Resouce Conservation Fun; folded; )</td>
+</tr>
+<tr>
+<td>0.98</td>
+<td>(folded, blue, colorful poster) <strong> 10 Pond and Stream Study Guide by PA Fish and Boat Commission (laminated; </strong>; 1 Color Article)</td>
+</tr>
+<tr>
+<td>0.14</td>
+<td>(#2; laminated; )</td>
+</tr>
+<tr>
+<td>1.00</td>
+<td>(<strong> container of spoons and a small ruler </strong> 12 Magnifying Glasses <strong> 22 Magnifying Boxes (bug boxes) Box B Section 3 3 White Sorting Trays Stack of Bug Cups (cups with bug pictures used for sorting and identification) Basket of Aquatic Life Sampling Equipment; </strong>; 8 Multi-Plate Samplers)</td>
+</tr>
+<tr>
+<td>0.14</td>
+<td>(#1; laminated; )</td>
+</tr>
+<tr>
+<td>0.39</td>
+<td>(Wards ( folded , blue; [is]; colorful poster)</td>
+</tr>
+<tr>
+<td>0.38</td>
+<td>(Series; [is] Aquatic Poster [of]; Creatures)</td>
+</tr>
+<tr>
+<td>0.38</td>
+<td>(Guide; [is] Study [of]; Stream)</td>
+</tr>
+<tr>
+<td>0.38</td>
+<td>(Cycle Mount; [is] __ Life [of]; Dragonfly)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>(10) Plastic and other synthetic materials used for bale wraps, silage covers, and other uses to protect or preserve feed shall be disposed of appropriately or recycled.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.82</td>
+<td>(other uses to protect or preserve feed; shall be disposed; )</td>
+</tr>
+<tr>
+<td>0.71</td>
+<td>(silage; covers; )</td>
+</tr>
+<tr>
+<td>0.86</td>
+<td>(other uses; to preserve; feed)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10 Pour mixture through paper strainer.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.54</td>
+<td>(10; Pour; mixture; through paper strainer)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10 &quot;Who is this that looks forth like the dawn, fair as the moon, bright as the sun, terrible as an army with banners?</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.45</td>
+<td>(this; looks; forth like the dawn, fair as the moon, bright as the sun, terrible as an army with banners)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10% sodium dodecyl sulfate (10 g SDS in 100 ml of water) or 10% dishwashing liquid (10 ml dishwashing liquid + 90 ml of water) 95% ethanol (or grain alcohol) calf thymus (sweetbread) 10mmx100mm test tubes, measuring cups, or 50 ml disposable conical tubes scissors cheese cloth or #6 coffee filters glass stirring rods mortar and pestle 25 ml graduated cylinders Student Procedure 1.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.94</td>
+<td>(10%; dishwashing; liquid (10 ml dishwashing liquid + 90 ml of water) 95% ethanol (or grain alcohol) calf thymus (sweetbread) 10mmx100mm test tubes, measuring cups, or 50 ml disposable conical tubes scissors cheese cloth or #6 coffee filters)</td>
+</tr>
+<tr>
+<td>0.90</td>
+<td>(10 ml; dishwashing; liquid + 90 ml of water)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10 Solar energy or sunlight is used to generate electricity directly using photovoltaic cells or to produce heat that can then be used directly or converted into electricity in a thermal power plant.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.95</td>
+<td>(10 Solar energy or sunlight; is used; to generate electricity directly using photovoltaic cells or to produce heat)</td>
+</tr>
+<tr>
+<td>0.88</td>
+<td>(heat; converted; into electricity; L:in a thermal power plant)</td>
+</tr>
+<tr>
+<td>0.71</td>
+<td>(heat; can be used directly; T:then)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10 stretching a spring Add masses to a pan balance and measure the deflection with a cathetometer.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.26</td>
+<td>(10; stretching; )</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10 Sweating helps cooling of the body.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.93</td>
+<td>(10 Sweating; helps; cooling of the body)</td>
+</tr>
+<tr>
+<td>0.91</td>
+<td>Context(10 Sweating helps,List([0, 17))):(10 Sweating; helps cooling; of the body)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10) The Company shall make a conscious effort to protect the environment with good waste management, with the use of recyclable material wherever possible (especially for packaging) and with the conservation of energy in the efficient use of transport &amp; electrical appliances.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.95</td>
+<td>(The Company; shall make; a conscious effort to protect the environment with good waste management)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10) The solid part of the Earth's surface is called the hydrosphere lithosphere troposphere atmosphere 11) A rock that contains fossil seashells was most likely formed as a result of volcanic activity sedimentation heat and pressure magma cooling 12) The diagram below shows the rock cycle.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.96</td>
+<td>(10) The solid part of the Earth's surface; is called; the hydrosphere)</td>
+</tr>
+<tr>
+<td>0.93</td>
+<td>(The diagram below; shows; the rock cycle)</td>
+</tr>
+<tr>
+<td>0.89</td>
+<td>(A rock; contains; fossil seashells)</td>
+</tr>
+<tr>
+<td>0.79</td>
+<td>(sedimentation heat and pressure magma; cooling; )</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10/ Transfer the sheets to a tray with water in it (I refill the initial presoak tray).</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.45</td>
+<td>(I; refill; the initial presoak tray)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10 Two carts magnetically repel each other on a teeter-totter.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.91</td>
+<td>(10 Two carts; magnetically repel; each other; on a teeter-totter)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>(10) Vast coal beds accumulate one on top of another, each as original swamp deposits on order of 100 feet thick, all in one year.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.96</td>
+<td>(10) Vast coal beds; accumulate; one on top of another, each as original swamp deposits on order of 100 feet thick, all in one year)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10 "Who is this that looks forth like the dawn, fair as the moon, bright as the sun, terrible as an army with banners?"</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.45</td>
+<td>(this; looks; forth like the dawn, fair as the moon, bright as the sun, terrible as an army with banners)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>10 You can make 20 recycled aluminum vans with the energy it takes to make one new can.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.62</td>
+<td>(You; can make; 20 recycled aluminum vans)</td>
+</tr>
+<tr>
+<td>0.89</td>
+<td>(the energy; takes; to make one new can)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>11-00 New Cause of Global Warming (Fox News) Provides a summary of a study that suggests that certain types of pollution are key factors in global warming.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.94</td>
+<td>(11-00 New Cause of Global Warming; Provides; a summary of a study)</td>
+</tr>
+<tr>
+<td>0.78</td>
+<td>(a study; suggests; that certain types of pollution are key factors in global warming)</td>
+</tr>
+<tr>
+<td>0.90</td>
+<td>Context(a study suggests,List([67, 88))):(certain types of pollution; are; key factors in global warming)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>1.10 Completed STIS/CCD/MA1/MA2 8171 (HST Far-UV Imaging and Spectra of Jupiter's Aurora During the Galileo Extended Mission) The Space Telescope Imaging Spectrograph (CCD, MA1 and MA2) was used to make far-ultraviolet spectrographic observations of the aurora on the planet Jupiter as part of the extended Galileo Mission.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Confidence</th>
+<th>Tuple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.26</td>
+<td>(1.10; Completed; )</td>
+</tr>
+<tr>
+<td>0.96</td>
+<td>(The Space Telescope Imaging Spectrograph; was used; to make far-ultraviolet spectrographic observations of the aurora on the planet Jupiter as part of the extended Galileo Mission)</td>
+</tr>
+</tbody>
+</table>
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-made-by-ai2">
+        <span>
+          Built by
+          <a href="http://allenai.org">
+            AI2 &bull; http://allenai.org
+          </a>
+        </span>
+        <div class="md-footer-copyright">
+          
+          powered by
+          <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+          and
+          <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+            Material for MkDocs</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-0b7df094bf.js"></script>
+      <script>app.initialize({url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
